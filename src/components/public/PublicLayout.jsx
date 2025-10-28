@@ -23,7 +23,7 @@ const PublicLayout = ({ children }) => {
         <div className="container mx-auto px-4 h-20 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             <Dumbbell className="w-8 h-8 text-primary" />
-            <span className="text-2xl font-bold text-gradient bg-gradient-to-r from-red-500 to-orange-500">
+            <span className="hidden md:inline text-2xl font-bold text-gradient bg-gradient-to-r from-red-500 to-orange-500">
               F2FitManager
             </span>
           </Link>
