@@ -17,7 +17,7 @@ function PageHeader({ title, description, actionButton, view, setView, onExport,
         <h1 className="text-3xl md:text-4xl font-bold text-gradient bg-gradient-to-r from-red-500 to-orange-500">{title}</h1>
         <p className="text-muted-foreground mt-2">{description}</p>
       </div>
-      <div className="flex items-center gap-2">
+      <div className="flex flex-wrap items-center gap-2">
         {setView && <ViewSwitcher view={view} setView={setView} />}
         {showExport && onExport && (
           <DropdownMenu>
